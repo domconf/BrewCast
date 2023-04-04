@@ -15,7 +15,7 @@
 
 <body>
   <header></header>
-</body>
+
 
 <header>
   <nav>
@@ -36,11 +36,13 @@
     <section class="Search">
       <!-- search input -->
       <span>Find a brew..</span>
-      <textarea id="textarea" class="textarea" placeholder="Search city.."></textarea>
-      <label for="textarea"></label>
-      <button class="btn waves-effect waves-light" type="submit" name="action">Search
-        <i class="material-icons right"></i>
-      </button>
+
+      <form>
+        <label for="city">Enter a city:</label>
+        <input type="text" id="city" name="city">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Search
+          <i class="material-icons right"></i>
+      </form>
       </button>
     </section>
   </div>
@@ -60,9 +62,28 @@
       <h1>Weather</h1>
   </section>
 
+ <!-- brewery -->
+
   <section id="brewery">
     <div class="container">
       <h1>Brewery</h1>
+    
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Brewery Type</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Postal Code</th>
+              <th>Country</th>
+              <th>Phone</th>
+              <th>Website</th>
+            </tr>
+          </thead>
+          <tbody id="brewery-data"></tbody>
+        </table>
   </section>
 
   <section id="contact-section">
@@ -72,4 +93,12 @@
       <a id="contacts">1-800-273-9379</a>
       <a id="contacts">BrewCast@brewcast.com</a>
   </section>
+  <script src="./assets/script.js"></script>
+</body>
 </main>
+
+
+
+
+
+
