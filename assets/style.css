@@ -58,5 +58,11 @@
 }
 
 .row button {
+  background-color: black;
+  color: goldenrod;
+}
+
+.row button:hover {
   background-color: goldenrod;
+  color: black;
 }
