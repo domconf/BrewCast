@@ -66,3 +66,11 @@
   background-color: goldenrod;
   color: black;
 }
+
+.search-column{
+  background-color:	rgb(212, 201, 201);
+}
+
+.card-body{
+  flex:auto
+}

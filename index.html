@@ -37,7 +37,7 @@
       <!-- search input -->
       <span>Find a brew..</span>
 
-      <form>
+      <form id="search-form">
         <label for="city">Enter a city:</label>
         <input type="text" id="city" name="city">
         <button class="btn waves-effect waves-light" type="submit" name="action">Search
@@ -60,6 +60,10 @@
   <section id="weather">
     <div class="container">
       <h1>Weather</h1>
+      <div id = "current-weather-container">
+        <h2 id = "forecast"></h2>
+        <div id="fiveday-container"></div>
+      </div>
   </section>
 
  <!-- brewery -->
@@ -93,6 +97,8 @@
       <a id="contacts">1-800-273-9379</a>
       <a id="contacts">BrewCast@brewcast.com</a>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./assets/script.js"></script>
 </body>
 </main>
