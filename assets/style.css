@@ -59,18 +59,45 @@
 
 .row button {
   background-color: black;
-  color: goldenrod;
+  color: goldenrod !important;
 }
 
 .row button:hover {
-  background-color: goldenrod;
-  color: black;
+  background-color: goldenrod !important;
+  color: black !important;
 }
 
-.search-column{
-  background-color:	rgb(212, 201, 201);
+.row button:focus {
+  background-color: black !important;
+  color: goldenrod !important;
 }
 
-.card-body{
-  flex:auto
+.search-column {
+  background-color: rgb(212, 201, 201);
+}
+
+.card-body {
+  flex: auto
+}
+
+th {
+  color: goldenrod !important;
+  background-color: black;
+  text-decoration: underline goldenrod 2px;
+}
+
+#brewery h1,
+#weather h1,
+#forecast {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 2px 8px goldenrod;
+}
+
+#forecast {
+  font-size: 30px;
+
+}
+
+#fiveday-container {
+  color: goldenrod !important;
 }
