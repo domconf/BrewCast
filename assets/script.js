@@ -1,5 +1,5 @@
 const form = document.querySelector('form');
-		const tableBody = document.getElementById('brewery-data');
+		const tableBody = document.getElementById('#brewery-data');
 
 		form.addEventListener('submit', async (event) => {
 			event.preventDefault();
