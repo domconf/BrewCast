@@ -104,26 +104,47 @@ var renderFiveDay = function (weather) {
 		forcastDisplay.appendChild(weatherImage);
 
 		var forecastTemp = document.createElement("span");  //creates element for displaying fiveday temperature.
-		forecastTemp.classList = "card-body text-center p-1";
-		forecastTemp.textContent = "Temp: " + ((dailyForecast.main.temp * 1.8) + 32).toFixed(2) + " °F";
-
+		forecastTemp.classList = "card-body";
+		if (dailyForecast.main.temp <= 0) {
+			forecastTemp.textContent = "Temp: Freezing!"
+		} else if (dailyForecast.main.temp > 0 && dailyForecast.main.temp <= 16) {
+			forecastTemp.textContent = "Temp: Cold"
+		} else if (dailyForecast.main.temp > 16 && dailyForecast.main.temp <= 22) {
+			forecastTemp.textContent = "Temp: Chilly"
+		} else if (dailyForecast.main.temp > 22 && dailyForecast.main.temp <= 30) {
+			forecastTemp.textContent = "Temp: Nice"
+		} else if (dailyForecast.main.temp > 30 && dailyForecast.main.temp <= 32) {
+			forecastTemp.textContent = "Temp: Warm"
+		} else if (dailyForecast.main.temp > 32) {
+			forecastTemp.textContent = "Temp: Hot!"
+		}
+		//forecastTemp.textContent = "Temp: " + ((dailyForecast.main.temp * 1.8) + 32).toFixed(2) + " °F";
 		forcastDisplay.appendChild(forecastTemp);
-
 		var forecastWind = document.createElement("span"); //creates element for displaying wind speed.
-		forecastWind.classList = "card-body text-center p-1";
-		forecastWind.textContent = "Wind: " + dailyForecast.wind.speed + "  MPH";
-
+		forecastWind.classList = "card-body";
+		if (dailyForecast.wind.speed >= 0 && dailyForecast.wind.speed < 25) {
+			forecastWind.textContent = "Wind: Breezy"
+		} else if (dailyForecast.wind.speed >= 25 && dailyForecast.wind.speed < 50) {
+			forecastWind.textContent = "Wind: Windy"
+		} else if (dailyForecast.wind.speed > 50) {
+			forecastWind.textContent = "Wind: Storm Winds!"
+		}
+		//forecastWind.textContent = "Wind: " + dailyForecast.wind.speed + "  MPH";
 		forcastDisplay.appendChild(forecastWind);
-
-		var forecastHumidity = document.createElement("span"); //creates element for displaying fiveday humidity.
-		forecastHumidity.classList = "card-body text-center p-1";
-		forecastHumidity.textContent = "Humidity: " + dailyForecast.main.humidity + " %";
-
-		forcastDisplay.appendChild(forecastHumidity);
+		var forecastHeat = document.createElement("span"); //creates element for displaying fiveday heat index.
+		forecastHeat.classList = "card-body";
+		if (dailyForecast.main.humidity > 10 && dailyForecast.main.humidity <= 80 && dailyForecast.main.temp >= 27 && dailyForecast.main.temp < 32) {
+			forecastHeat.textContent = "Advice: Moderate Heat"
+		} else if (dailyForecast.main.humidity > 10 && dailyForecast.main.humidity <= 90 && dailyForecast.main.temp >= 32 && dailyForecast.main.temp < 38) {
+			forecastHeat.textContent = "Advice: Risk of Heatstroke"
+		} else if (dailyForecast.main.humidity > 10 && dailyForecast.main.humidity <= 90 && dailyForecast.main.temp >= 38) {
+			forecastHeat.textContent = "Advice: Stay Inside!"
+		} else {
+			forecastHeat.textContent = "Advice: Safe Outside"
+		}
+		//forecastHeat.textContent = "Heat Index: " + dailyForecast.main.humidity + " %";
+		forcastDisplay.appendChild(forecastHeat);
 		forecastContainerEl.appendChild(forcastDisplay);
-
-		console.log(forcastDisplay);
 	}
 }
-
 cityForm.addEventListener("submit", formSubmit);  //added event listener to make buttons clickable.
