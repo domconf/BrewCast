@@ -23,9 +23,9 @@ Brewcast was created for those who love to enjoy a cold beer in the warm weather
 
 ![Screenshot 2023-04-05 at 8 29 18 PM](https://user-images.githubusercontent.com/123976458/230243235-9f62336b-52cb-49cd-b84d-adbf98c6528f.png)
 
-![Screenshot 2023-04-06 at 6 48 50 PM](https://user-images.githubusercontent.com/123976458/230507746-dfd07001-4777-4e0a-8f52-bdaecaec31cb.png)
+![Screenshot 2023-04-05 at 8 30 03 PM](https://user-images.githubusercontent.com/123976458/230508086-c6db1d7d-3ba0-4f97-8541-e87d66714f32.png)
 
-![Screenshot 2023-04-05 at 8 30 31 PM](https://user-images.githubusercontent.com/123976458/230243261-30c5ea7f-6122-462b-921f-d9e1b9e6e74e.png)
+![Screenshot 2023-04-06 at 6 48 50 PM](https://user-images.githubusercontent.com/123976458/230507746-dfd07001-4777-4e0a-8f52-bdaecaec31cb.png)
 
 ![Screenshot 2023-04-05 at 8 30 59 PM](https://user-images.githubusercontent.com/123976458/230243278-154906a2-567e-44a2-bbb2-7a018118782f.png)
 
