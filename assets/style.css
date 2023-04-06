@@ -100,4 +100,16 @@ th {
 
 #fiveday-container {
   color: goldenrod !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: block;
+}
+
+.card {
+  display: inline-block;
+  padding: 20px;
+
 }
